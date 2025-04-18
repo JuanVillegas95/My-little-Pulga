@@ -15,8 +15,8 @@ async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
                     {slug
                         .split("_")
                         .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
-                        .join(" ")+ " "}
-                     Collection
+                        .join(" ") + " "}
+                    Collection
                 </h1>
                 <ProductsView products={products} categories={categories} />
             </div>
